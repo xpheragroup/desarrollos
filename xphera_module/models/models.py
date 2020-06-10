@@ -2,9 +2,9 @@
 
 from odoo import models, fields, api
 
-odoo
 
 class BomTotalValueField(models.Model):
+    _name = 'mrp.bom'
     _inherit = 'mrp.bom'
 
     x_custom_val = fields.Char(string="Campo de Prueba", required=False, )
@@ -12,6 +12,7 @@ class BomTotalValueField(models.Model):
 
 
 class WorkorderTotalValueField(models.Model):
+    _name = 'mrp.workorder'
     _inherit = 'mrp.workorder'
 
     x_custom_val = fields.Char(string="Campo de Prueba", required=False, )
@@ -19,6 +20,7 @@ class WorkorderTotalValueField(models.Model):
 
 
 class ProductionTotalValueField(models.Model):
+    _name = 'mrp.production'
     _inherit = 'mrp.production'
 
     x_custom_val = fields.Char(string="Campo de Prueba", required=False, )
@@ -27,10 +29,5 @@ class ProductionTotalValueField(models.Model):
 
     @api.depends('product_id.price', 'product_uom_qty')
     def _compute_valor_total(self):
-        """
-        @api.depends() should contain all fields that will be used in the calculations.
-        """
         for record in self:
             record['x_valor_total'] = record.product_id.price * record.product_uom_qty
-
-        pass
