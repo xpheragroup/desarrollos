@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_chris_module2_chris_module2,chris_module2.chris_module2,model_chris_module2_chris_module2,base.group_user,1,1,1,1
