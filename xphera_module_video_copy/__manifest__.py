@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Módulo Xphera Video",
+    'name': "Módulo Xphera Video NEW",
 
     'summary': """
         Módulo con Desarrollos a la medida para suplir necesidades.""",
@@ -15,7 +15,7 @@
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Technical Settings',
-    'version': '0.5',
+    'version': '0.6',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'stock', 'mrp', 'product'],
