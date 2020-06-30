@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Módulo Xphera Video Copy",
+    'name': "Módulo Xphera Video",
 
     'summary': """
         Módulo con Desarrollos a la medida para suplir necesidades.""",
