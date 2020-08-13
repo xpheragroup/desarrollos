@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="033a101d-d52f-481b-b31f-aff52c23ded0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/controllers/controllers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/demo/demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/models/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/security/ir.model.access.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/views/templates.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modulo_xphera/views/views.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1g3drePVeUC0QwPHvPFBPlfj1wc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="033a101d-d52f-481b-b31f-aff52c23ded0" name="Default Changelist" comment="" />
+      <created>1597347411578</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597347411578</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="719" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597347455112">
+      <screen x="68" y="27" width="1852" height="1053" />
+    </state>
+    <state x="719" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/68.27.1852.1053@68.27.1852.1053" timestamp="1597347455112" />
+  </component>
+</project>
