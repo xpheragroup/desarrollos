@@ -39,7 +39,7 @@ class PurchaseOrder(models.Model):
     @api.onchange('date_order')
     def date_order_change(self):
         res = {}
-        if self.date_order and self.date_order > date.today():
+        if self.date_order and self.date_order.date() > date.today():
             warning = {
                 'title': "Error validación en la fecha {}".format(
                     self.date_order
