@@ -31,3 +31,20 @@ class SaleOrderLine(models.Model):
             }
             res.update({'warning': warning})
         return res
+
+class PurchaseOrder(models.Model):
+    _inherit = 'purchase.order'
+
+    @api.onchange('date_order')
+    def date_order_change(self):
+        res = {}
+        if self.date_order and self.date_order > 1:
+            warning = {
+                'title': "Error validación en la fecha {}".format(
+                    self.date_order
+                ),
+                'message': "Fecha inválida,",
+                'type': 'notification',
+            }
+            res.update({'warning': warning})
+        return res
