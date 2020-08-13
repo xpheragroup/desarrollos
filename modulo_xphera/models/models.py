@@ -45,7 +45,7 @@ class PurchaseOrder(models.Model):
                     self.date_order
                 ),
                 'message': "La fecha de la orden no puede ser menor a la fecha actual.",
-                #'type': 'notification',
+                'type': 'notification',
             }
             res.update({'warning': warning})
         return res
