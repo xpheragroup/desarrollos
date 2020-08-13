@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033a101d-d52f-481b-b31f-aff52c23ded0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/controllers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/controllers/controllers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/demo/demo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/models/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/security/ir.model.access.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/views/templates.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modulo_xphera/views/views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

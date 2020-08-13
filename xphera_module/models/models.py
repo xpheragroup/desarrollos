@@ -2,14 +2,32 @@
 
 from odoo import models, fields, api
 
-class my_module(models.Model):
-    _name = 'my_module.my_module'
+# class my_module(models.Model):
+#     _name = 'my_module.my_module'
 
-    name = fields.Char()
-    value = fields.Integer()
-    value2 = fields.Float(compute="_value_pc", store=True)
-    description = fields.Text()
+#     name = fields.Char()
+#     value = fields.Integer()
+#     value2 = fields.Float(compute="_value_pc", store=True)
+#     description = fields.Text()
+#
+#     @api.depends('value')
+#     def _value_pc(self):
+#         self.value2 = float(self.value) / 100
 
-    @api.depends('value')
-    def _value_pc(self):
-        self.value2 = float(self.value) / 100
+class SaleOrderLine(models.Model):
+    _inherit = 'sale.order.line'
+
+    @api.onchange('product_uom', 'product_uom_qty')
+    def product_uom_change(self):
+        super(SaleOrderLine, self).product_uom_change()
+        res = {}
+        if self.product_uom_qty and self.product_uom_qty > 1:
+            warning = {
+                'title': "Error validación en el producto {}".format(
+                    self.product_id.name
+                ),
+                'message': "Supera la cantidad máxima de (1)",
+                'type': 'notification',
+            }
+            res.update({'warning': warning})
+        return res
