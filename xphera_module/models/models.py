@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import date
 
 # class my_module(models.Model):
 #     _name = 'my_module.my_module'
@@ -38,7 +39,7 @@ class PurchaseOrder(models.Model):
     @api.onchange('date_order')
     def date_order_change(self):
         res = {}
-        if self.date_order and self.date_order > 1:
+        if self.date_order and self.date_order > date.today():
             warning = {
                 'title': "Error validación en la fecha {}".format(
                     self.date_order
