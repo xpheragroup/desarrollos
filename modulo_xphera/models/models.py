@@ -68,9 +68,26 @@ class StockReturnPicking(models.TransientModel):
         return res
 
 
-# class ReturnPickingLine(models.TransientModel):
-#     _name = "stock.return.picking.line"
-
+class ReturnPickingLine(models.TransientModel):
+    _inherit = "stock.return.picking.line"
+    @api.onchange('quantity')
+    def quantity_change(self):
+        res = {}
+        if self.quantity and self.quantity > 5:
+            warning = {
+                'title': "Error validación en la cantidad {}".format(
+                    self.quantity
+                ),
+                'message': "La cantidad a devolver no puede ser mayor a la cantidad terminada. picking line",
+                #'type': 'notification',
+            }
+            res.update({'warning': warning})
+        return res
 
 # class ReturnPicking(models.TransientModel):
-#     _name = 'stock.return.picking'
+#     _inherit = 'stock.return.picking'
+#
+#     @api.onchange('picking_id')
+#     def _onchange_picking_id(self):
+#         super(ReturnPicking, self)._onchange_picking_id()
+#
