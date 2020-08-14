@@ -85,7 +85,7 @@ class ReturnPickingLine(models.TransientModel):
             titulo += "Error validación en la cantidad {}".format(self.quantity)
             mensaje += "La cantidad a devolver no puede ser mayor a la cantidad en mano. Actual: ".format(self.product_id.qty_available)
         # if self.quantity and self.quantity >
-        if titulo.length > 1:
+        if len(titulo) > 1:
             warning = {
                 'title': titulo,
                 'message': mensaje,
