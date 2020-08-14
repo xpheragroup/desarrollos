@@ -78,12 +78,17 @@ class ReturnPickingLine(models.TransientModel):
     @api.onchange('quantity')
     def quantity_change(self):
         res = {}
-        if self.quantity and self.quantity > 2:
+        titulo = ""
+        mensaje = ""
+
+        if self.quantity and self.quantity > self.product_id.qty_available:
+            titulo += "Error validación en la cantidad {}".format(self.quantity)
+            mensaje += "La cantidad a devolver no puede ser mayor a la cantidad en mano. Actual: ".format(self.product_id.qty_available)
+        # if self.quantity and self.quantity >
+        if titulo.length > 1:
             warning = {
-                'title': "Error validación en la cantidad {}".format(
-                    self.quantity
-                ),
-                'message': "La cantidad a devolver no puede ser mayor a la cantidad terminada. picking line",
+                'title': titulo,
+                'message': mensaje,
                 #'type': 'notification',
             }
             res.update({'warning': warning})
