@@ -83,8 +83,8 @@ class ReturnPickingLine(models.TransientModel):
         if self.quantity and self.quantity > self.product_id.qty_available:
             mensaje += "La cantidad a devolver no puede ser mayor a la cantidad en mano. Actual: {}".format(self.product_id.qty_available)
 
-        if self.quantity and self.quantity > self.move_id.line.qty_done:
-            mensaje += "\nLa cantidad a devolver no puede ser mayor a la cantidad Terminado. Actual: {}".format(self.move_id.line.qty_done)
+        if self.quantity and self.quantity > self.move_id.quantity_done:
+            mensaje += "\nLa cantidad a devolver no puede ser mayor a la cantidad Terminado. Actual: {}".format(self.move_id.quantity_done)
 
         if len(mensaje) > 1:
             self.quantity = 0
