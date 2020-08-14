@@ -73,7 +73,7 @@ class ReturnPickingLine(models.TransientModel):
     @api.onchange('quantity')
     def quantity_change(self):
         res = {}
-        if self.quantity and self.quantity > 5:
+        if self.quantity and self.quantity > 2:
             warning = {
                 'title': "Error validación en la cantidad {}".format(
                     self.quantity
