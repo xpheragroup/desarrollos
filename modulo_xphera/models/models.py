@@ -44,8 +44,8 @@ class PurchaseOrder(models.Model):
                 'title': "Error validación en la fecha {}".format(
                     self.date_order
                 ),
-                'message': "La fecha de la orden no puede ser menor a la fecha actual.",
-                'type': 'notification',
+                'message': "Fecha Pedido no puede ser menor a la fecha actual.",
+                #'type': 'notification',
             }
             res.update({'warning': warning})
         return res
