@@ -47,6 +47,7 @@ class PurchaseOrder(models.Model):
                 'message': "Fecha Pedido no puede ser menor a la fecha actual.",
                 #'type': 'notification',
             }
+            self.date_order = date.today()
             res.update({'warning': warning})
         return res
 
