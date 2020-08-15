@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-from datetime import date
+from datetime import date, datetime
 
 # class my_module(models.Model):
 #     _name = 'my_module.my_module'
@@ -39,7 +39,7 @@ class PurchaseOrder(models.Model):
     @api.onchange('date_order')
     def date_order_change(self):
         res = {}
-        if self.date_order and self.date_order.date() < date.today():
+        if self.date_order and self.date_order < datetime.today():
             warning = {
                 'title': "Error validación en la fecha {}".format(
                     self.date_order
@@ -47,7 +47,7 @@ class PurchaseOrder(models.Model):
                 'message': "Fecha Pedido no puede ser menor a la fecha actual.",
                 #'type': 'notification',
             }
-            self.date_order = date.today()
+            self.date_order = datetime.today()
             res.update({'warning': warning})
         return res
 
