@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <record model="ir.ui.view" id="formulario_param.list">
+    <record model="ir.ui.view" id="formulario.param.list">
       <field name="name">Lista de Parametrizaciones</field>
       <field name="model">formulario.param</field>
       <field name="arch" type="xml">
