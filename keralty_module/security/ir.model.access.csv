@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_keralty_module_keralty_module,keralty_module.keralty_module,model_keralty_module_keralty_module,base.group_user,1,1,1,1
