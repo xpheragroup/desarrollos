@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
+
+class FormularioParametrizacion(models.Model):
+    _name = 'formulario.param'
+    _description = 'Formulario Parametrización'
+
+    name = fields.Char()
 
 
 # class keralty_module(models.Model):
