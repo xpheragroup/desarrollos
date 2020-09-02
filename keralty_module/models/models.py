@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class FormularioParametrizacion(models.Model):
-    _name = 'formulario.param'
+    _name = 'keralty_module.formulario.param'
     _description = 'Formulario Parametrización'
 
     name = fields.Char()
