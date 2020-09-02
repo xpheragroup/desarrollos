@@ -33,7 +33,8 @@
     </record>
 
     <!-- Top menu item -->
-    <menuitem name="Keralty" id="keralty_module.menu_root"/>
+    <menuitem name="Keralty" id="keralty_module.menu_root"
+        web_icon="keralty_module,static/description/icon.png"/>
     <!-- menu categories -->
     <menuitem name="Menu 1" id="keralty_module.menu_1" parent="keralty_module.menu_root"/>
     <menuitem name="Menu 2" id="keralty_module.menu_2" parent="keralty_module.menu_root"/>
