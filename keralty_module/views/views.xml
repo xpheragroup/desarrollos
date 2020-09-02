@@ -39,7 +39,7 @@
 
     <!-- Top menu item -->
     <menuitem name="Keralty" id="keralty_module.menu_root"
-        web_icon="keralty_module,static/description/icon.png"/>
+        web_icon="keralty_module,static/description/icon.svg"/>
     <!-- menu categories -->
     <menuitem name="Parametrización" id="keralty_module.menu_1" parent="keralty_module.menu_root"/>
     <menuitem name="Formulario Clientes" id="keralty_module.menu_2" parent="keralty_module.menu_root"/>
