@@ -5,7 +5,7 @@
       <field name="name">Formulario Params list</field>
       <field name="model">keralty_module.formulario.param</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree string="Información general">
           <field name="nombre_codigo" placeholder="Nombre o Código"/>
           <field name="banios_hombres" placeholder="Área de casilleros para funcionarios"/>
         </tree>
