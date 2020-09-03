@@ -6,7 +6,8 @@
       <field name="model">keralty_module.formulario.param</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
+          <field name="nombre_codigo" placeholder="Nombre o Código"/>
+          <field name="oficina_admon" placeholder="Test"/>
         </tree>
       </field>
     </record>
