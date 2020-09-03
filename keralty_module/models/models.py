@@ -6,8 +6,8 @@ class FormularioParametrizacion(models.Model):
     _name = 'keralty_module.formulario.param'
     _description = 'Formulario Parametrización'
 
-    nombre_codigo = fields.Char(required=True)
-    casilleros = fields.Float(string="Area de casilleros para funcionarios", required=True, help="Area de casilleros para funcionarios", digits=(8, 2))
+    nombre_codigo = fields.Char(required=True, string="Nombre o Código")
+    casilleros = fields.Float(string="Área de casilleros para funcionarios", required=True, help="Area de casilleros para funcionarios", digits=(8, 2))
     banios_hombres = fields.Float(string="Baños públicos hombres", required=True, help="Baños públicos hombres", digits=(8, 2))
     banios_mujeres = fields.Float(string="Baños públicos mujeres", required=True, help="Baños públicos mujeres", digits=(8, 2))
     banios_hombres_disc = fields.Float(string="Baños públicos hombres en condición de discapacidad.", required=True, help="Baños publícos hombres en condición de discapacidad", digits=(8, 2))
