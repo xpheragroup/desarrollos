@@ -7,6 +7,8 @@ class FormularioParametrizacion(models.Model):
     _description = 'Formulario Parametrización'
 
     nombre_codigo = fields.Char(required=True, string="Nombre o Código", help="PRUEBA AYUDA")
+    nombre_codigo_ex = fields.Char(required=True, string="Nombre o Código", help="PRUEBA AYUDA")
+    nombre_codigo_ex_ex = fields.Char(required=True, string="Nombre o Código", help="PRUEBA AYUDA")
     casilleros = fields.Char(string="Área de casilleros para funcionarios", required=True)
     banios_hombres = fields.Char(string="Baños públicos hombres", required=True, help="Baños públicos hombres")
     banios_mujeres = fields.Char(string="Baños públicos mujeres", required=True, help="Baños públicos mujeres")
