@@ -7,7 +7,7 @@
       <field name="arch" type="xml">
         <tree>
           <field name="nombre_codigo" placeholder="Nombre o Código"/>
-          <field name="banios_hombres" placeholder="Área de casilleros para funcionarios"/>
+<!--          <field name="banios_hombres" placeholder="Área de casilleros para funcionarios"/>-->
         </tree>
       </field>
     </record>
