@@ -3,12 +3,11 @@
     'name': "Keralty",
 
     'summary': """
-        Modulo Keralty
-        """,
+        Módulo Keralty creación de Formulario""",
 
     'description': """
-        Formulario para captación solicitudes de construcción de clientes.
-        """,
+        Módulo Keralty creación de Formulario
+    """,
 
     'author': "Xphera Group S.A.S.",
     'website': "http://xphera.co",
