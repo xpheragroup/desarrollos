@@ -1,60 +1,53 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
     <record model="ir.ui.view" id="keralty_module.list">
-      <field name="name">keralty_module list</field>
-      <field name="model">keralty_module.keralty_module</field>
+      <field name="name">Formulario Params list</field>
+      <field name="model">keralty_module.formulario.param</field>
       <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+        <tree string="Información general">
+          <field name="nombre_codigo" placeholder="Nombre o Código"/>
+          <field name="banios_hombres" placeholder="Área de casilleros para funcionarios"/>
         </tree>
       </field>
     </record>
--->
 
     <!-- actions opening views on models -->
-<!--
     <record model="ir.actions.act_window" id="keralty_module.action_window">
-      <field name="name">keralty_module window</field>
-      <field name="res_model">keralty_module.keralty_module</field>
-      <field name="view_mode">tree,form</field>
+      <field name="name">Parametrización</field>
+      <field name="res_model">keralty_module.formulario.param</field>
+      <field name="view_mode">tree,pivot,graph,form,kanban</field>
+      <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+              No hay ninguna parametrización creada.
+          </p>
+      </field>
     </record>
--->
 
     <!-- server action to the one above -->
-<!--
     <record model="ir.actions.server" id="keralty_module.action_server">
       <field name="name">keralty_module server</field>
-      <field name="model_id" ref="model_keralty_module_keralty_module"/>
+      <field name="model_id" ref="model_keralty_module_formulario_param"/>
       <field name="state">code</field>
       <field name="code">
         action = {
           "type": "ir.actions.act_window",
           "view_mode": "tree,form",
-          "res_model": model._name,
+          "res_model": formulario.param._name,
         }
       </field>
     </record>
--->
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="keralty_module" id="keralty_module.menu_root"/>
--->
+    <menuitem name="Keralty" id="keralty_module.menu_root"
+        web_icon="keralty_module,static/description/logo.png"/>
     <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="keralty_module.menu_1" parent="keralty_module.menu_root"/>
-    <menuitem name="Menu 2" id="keralty_module.menu_2" parent="keralty_module.menu_root"/>
--->
+    <menuitem name="Parametrización" id="keralty_module.menu_1" parent="keralty_module.menu_root"/>
+    <menuitem name="Formulario Clientes" id="keralty_module.menu_2" parent="keralty_module.menu_root"/>
     <!-- actions -->
-<!--
-    <menuitem name="List" id="keralty_module.menu_1_list" parent="keralty_module.menu_1"
+    <menuitem name="Lista de Parametrizaciones" id="keralty_module.menu_1_list" parent="keralty_module.menu_1"
               action="keralty_module.action_window"/>
-    <menuitem name="Server to list" id="keralty_module" parent="keralty_module.menu_2"
+    <menuitem name="Lista de Formularios Clientes" id="keralty_module" parent="keralty_module.menu_2"
               action="keralty_module.action_server"/>
--->
   </data>
 </odoo>

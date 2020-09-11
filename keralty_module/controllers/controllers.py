@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
-# from odoo import http
 
+from odoo import http
+
+
+class KeraltyModule(http.Controller):
+    @http.route('/keralty/', auth='public')
+    def index(self, **kw):
+        return "Hello, world"
 
 # class KeraltyModule(http.Controller):
 #     @http.route('/keralty_module/keralty_module/', auth='public')
