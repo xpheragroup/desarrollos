@@ -19,7 +19,7 @@
       <field name="view_mode">tree,pivot,graph,form,kanban</field>
       <field name="help" type="html">
           <p class="oe_view_nocontent_create">
-              No hay ninguna parametrización creada.
+              No hay ninguna parametrización creada hasta el momento.
           </p>
       </field>
     </record>
