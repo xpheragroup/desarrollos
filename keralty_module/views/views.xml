@@ -57,7 +57,6 @@
                 <div class="oe_title">
                     <img src="/keralty_module/static/src/img/keralty_logo.svg" width="150px" height="100px"/>
                     <!-- <span class="o_form_label">Título Formulario Parametrización </span> -->
-                    <label for="nombre_codigo" class="oe_edit_only" string="Nombre o Código"/>
                     <h1><field name="nombre_codigo" class="oe_inline" placeholder="Nombre o Código"/></h1>
                 </div>
                 <group>
