@@ -79,7 +79,7 @@
                                     <field name="nombre_codigo" readonly="1"/>
                                 </group>
                                 <group name="other_info">
-                                    <field name="user_id"/>
+                                    <field name="casilleros"/>
                                 </group>
                             </group>
                         </page>
