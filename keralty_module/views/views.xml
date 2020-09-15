@@ -39,9 +39,9 @@
     </record>
 
     <!-- FORMULARIO PERSONALIZADO -->
-        <record id="purchase_order_form" model="ir.ui.view">
-            <field name="name">formulario.param.form</field>
-            <field name="model">formulario.param</field>
+        <record id="keralty_formulario_param_form" model="ir.ui.view">
+            <field name="name">keralty_module.formulario.param.form</field>
+            <field name="model">keralty_module.formulario.param</field>
             <field name="arch" type="xml">
                 <form string="Formulario de Parametricos" class="o_purchase_order">
                 <header>
