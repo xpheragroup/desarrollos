@@ -58,14 +58,11 @@
                     <img src="/keralty_module/static/src/img/keralty_logo.svg" width="150px" height="100px"/>
                     <!-- <span class="o_form_label">Título Formulario Parametrización </span> -->
                     <h1>
-                        <field name="nombre_codigo"/>
+                        <field name="nombre_codigo">Nombre o Código</field>
                     </h1>
                 </div>
                 <group>
                     <group string="Consultorios">
-                        <h2>
-                            <span class="o_form_label">Consultorios</span>
-                        </h2>
                         <field name="casilleros"/>
                         <field name="banios_hombres"/>
                         <field name="banios_mujeres"/>
@@ -77,9 +74,6 @@
                         <field name="banios_mujeres_emp"/>
                     </group>
                     <group string="Laboratorios">
-                        <h2>
-                            <span class="o_form_label">Laboratorios</span>
-                        </h2>
                         <field name="banios_hombres_lab"/>
                         <field name="banios_mujeres_lab"/>
                         <field name="banios_hombres_lab_disc"/>
