@@ -88,7 +88,7 @@
                     <page string="Secundario Test" name="purchase_delivery_invoice">
                         <group>
                             <group name="planning">
-                                <span class="o_form_label">Info/span>
+                                <span class="o_form_label">Info</span>
                             </group>
                             <group name="other_info">
                                 <span class="o_form_label">Otra info</span>
