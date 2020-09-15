@@ -46,9 +46,6 @@
                 <form string="Formulario de Parametricos" class="o_purchase_order">
                 <header>
                     <button name="print_quotation" string="Print RFQ" type="object" class="oe_highlight" groups="base.group_user"/>
-                    <center>
-                        <img src="/static/src/img/keralty_logo.svg" width="70%" height="100%"/><br/>
-                    </center>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
@@ -56,8 +53,10 @@
                             class="oe_stat_button"
                             icon="fa-pencil-square-o">
                         </button>
+                        <img src="/static/src/img/keralty_logo.svg" width="70%" height="100%"/>
                     </div>
                     <div class="oe_title">
+                        <img src="/static/src/img/keralty_logo.svg" width="70%" height="100%"/>
                         <span class="o_form_label">Título Formulario Parametrización </span>
                         <h1>
                             <field name="nombre_codigo" readonly="1"/>
