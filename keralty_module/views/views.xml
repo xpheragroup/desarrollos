@@ -38,7 +38,7 @@
       </field>
     </record>
 
-    <!-- FORMULARIO PERSONALIZADO -->
+    <!-- FORMULARIO PARAMETRIZACIONES PERSONALIZADO -->
         <record id="keralty_formulario_param_form" model="ir.ui.view">
             <field name="name">keralty_module.formulario.param.form</field>
             <field name="model">keralty_module.formulario.param</field>
@@ -46,6 +46,9 @@
                 <form string="Formulario de Parametricos" class="o_purchase_order">
                 <header>
                     <button name="print_quotation" string="Print RFQ" type="object" class="oe_highlight" groups="base.group_user"/>
+                    <center>
+                        <img src="/static/src/img/keralty_logo.svg" width="70%" height="100%"/><br/>
+                    </center>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
