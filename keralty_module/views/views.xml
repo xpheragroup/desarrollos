@@ -39,58 +39,77 @@
     </record>
 
     <!-- FORMULARIO PARAMETRIZACIONES PERSONALIZADO -->
-        <record id="keralty_formulario_param_form" model="ir.ui.view">
-            <field name="name">keralty_module.formulario.param.form</field>
-            <field name="model">keralty_module.formulario.param</field>
-            <field name="arch" type="xml">
-                <form string="Formulario de Parametricos" class="o_purchase_order">
-                <header>
-                    <button name="print_quotation" string="Print RFQ" type="object" class="oe_highlight" groups="base.group_user"/>
-                </header>
-                <sheet>
-                    <div class="oe_button_box" name="button_box">
-                        <button type="object"  name="action_view_invoice"
-                            class="oe_stat_button"
-                            icon="fa-pencil-square-o">
-                        </button>
-                        <img src="keralty_module,static/src/img/keralty_logo.svg" width="70%" height="100%"/>
-                    </div>
-                    <div class="oe_title">
-                        <img src="/static/src/img/keralty_logo.svg" width="70%" height="100%"/>
-                        <span class="o_form_label">Título Formulario Parametrización </span>
-                        <h1>
-                            <field name="nombre_codigo" readonly="1"/>
-                        </h1>
-                    </div>
-                    <group>
-                        <group>
-                            <field name="nombre_codigo" readonly="1"/>
-                        </group>
-                        <group>
-                            <field name="nombre_codigo" readonly="1"/>
-                        </group>
-                    </group>
-                    <notebook>
-                        <page string="Inicial">
-                        </page>
-                        <page string="Secundario Test" name="purchase_delivery_invoice">
-                            <group>
-                                <group name="planning">
-                                    <field name="nombre_codigo" readonly="1"/>
-                                </group>
-                                <group name="other_info">
-                                    <field name="casilleros"/>
-                                </group>
-                            </group>
-                        </page>
-                    </notebook>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="nombre_codigo" readonly="1"/>
+    <record id="keralty_formulario_param_form" model="ir.ui.view">
+        <field name="name">keralty_module.formulario.param.form</field>
+        <field name="model">keralty_module.formulario.param</field>
+        <field name="arch" type="xml">
+            <form string="Formulario de Parametricos" class="o_purchase_order">
+            <header>
+                <button name="print_quotation" string="Paso 1" type="object" class="oe_highlight" groups="base.group_user"/>
+            </header>
+            <sheet>
+                <div class="oe_button_box" name="button_box">
+                    <button type="object"  name="action_view_invoice"
+                        class="oe_stat_button"
+                        icon="fa-pencil-square-o">
+                    </button>
                 </div>
-                </form>
-            </field>
-        </record>
+                <div class="oe_title">
+                    <img src="/keralty_module/static/src/img/keralty_logo.svg" width="150px" height="100px"/>
+                    <!-- <span class="o_form_label">Título Formulario Parametrización </span> -->
+                    <h1>
+                        <field name="nombre_codigo"/>
+                    </h1>
+                </div>
+                <group>
+                    <group string="Consultorios">
+                        <h2>
+                            <span class="o_form_label">Consultorios</span>
+                        </h2>
+                        <field name="casilleros"/>
+                        <field name="banios_hombres"/>
+                        <field name="banios_mujeres"/>
+                        <field name="banios_hombres_disc"/>
+                        <field name="banios_mujeres_disc"/>
+                        <field name="cafeteria_empleados"/>
+                        <field name="cuarto_aseo"/>
+                        <field name="banios_hombres_emp"/>
+                        <field name="banios_mujeres_emp"/>
+                    </group>
+                    <group string="Laboratorios">
+                        <h2>
+                            <span class="o_form_label">Laboratorios</span>
+                        </h2>
+                        <field name="banios_hombres_lab"/>
+                        <field name="banios_mujeres_lab"/>
+                        <field name="banios_hombres_lab_disc"/>
+                        <field name="banios_mujeres_lab_disc"/>
+                        <field name="banio_mixto"/>
+                        <field name="vestier"/>
+                        <field name="oficina_admon"/>
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Inicial">
+                    </page>
+                    <page string="Secundario Test" name="purchase_delivery_invoice">
+                        <group>
+                            <group name="planning">
+                                <field name="nombre_codigo" readonly="1"/>
+                            </group>
+                            <group name="other_info">
+                                <field name="casilleros"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </sheet>
+            <div class="oe_chatter">
+                <field name="nombre_codigo" readonly="1"/>
+            </div>
+            </form>
+        </field>
+    </record>
 
 
     <!-- Top menu item -->
