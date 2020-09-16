@@ -34,13 +34,15 @@ class FormularioCliente(models.Model):
     #
     nombre_proyecto = fields.Char(required=True, string="Nombre Proyecto")
     # Ocupación centro médico
-    numero_usuarios = fields.Float(string="Número de Usuarios", required=True, help="Número de Usuarios", digits=(8, 2))
-    numero_empleados = fields.Float(string="Número de Empleados", required=True, help="Número de Empleados", digits=(8, 2))
-    terceros = fields.Float(string="Terceros", required=True, help="Terceros", digits=(8, 2))
+    numero_usuarios = fields.Float(string="Número de Usuarios", required=True, help="Número de Usuarios")
+    numero_empleados = fields.Float(string="Número de Empleados", required=True, help="Número de Empleados")
+    terceros = fields.Float(string="Terceros", required=True, help="Terceros")
 
     consultorio_general = fields.Float(string="Consultorio General", required=True, help="Consultorio General", digits=(8, 2))
     consultorio_general_con_banio = fields.Float(string="Consultorio General con baño", required=True, help="Consultorio General con baño", digits=(8, 2))
     consultorio_general_con_banio_disc = fields.Float(string="Consultorio General con baño en condición de discapacidad", required=True, help="Consultorio General con baño en condición de discapacidad", digits=(8, 2))
+    consultorio_general_crecimiento_desarrollo = fields.Float(string="Consultorio General crecimiento y desarrollo", required=True, help="Consultorio General crecimiento y desarrollo", digits=(8, 2))
+    consultorio_vacunacion = fields.Float(string="Consultorio Vacunación", required=True, help="Consultorio Vacunación", digits=(8, 2))
 
 # class keralty_module(models.Model):
 #     _name = 'keralty_module.keralty_module'
