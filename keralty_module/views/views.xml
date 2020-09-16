@@ -189,15 +189,10 @@
     <!-- menu categories -->
     <menuitem name="Parametrización" id="keralty_module.menu_1" parent="keralty_module.menu_root"/>
     <menuitem name="Formulario Clientes" id="keralty_module.menu_2" parent="keralty_module.menu_root"/>
-    <menuitem name="Formulario ClientesEX" id="keralty_module.menu_3" parent="keralty_module.menu_root"/>
     <!-- actions -->
     <menuitem name="Lista de Parametrizaciones" id="keralty_module.menu_1_list" parent="keralty_module.menu_1"
               action="keralty_module.action_window"/>
-    <menuitem name="Lista de Formularios Clientes" id="keralty_module.menu_1_clientes" parent="keralty_module.menu_1"
-              action="keralty_module.form_cliente_action_window"/>
     <menuitem name="Lista de Formularios Clientes" id="keralty_module.menu_2_list" parent="keralty_module.menu_2"
               action="keralty_module.form_cliente_action_window"/>
-    <menuitem name="Lista de Formularios ClientesEX" id="keralty_module.menu_3_list" parent="keralty_module.menu_3"
-              action="keralty_module.action_server"/>
   </data>
 </odoo>
