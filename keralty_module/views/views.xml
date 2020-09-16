@@ -25,7 +25,7 @@
     </record>
 
     <!-- FORMULARIO CLIENTE -->
-    <record model="ir.actions.act_window" id="keralty_module_form_cliente.action_window">
+    <record model="ir.actions.act_window" id="keralty_module.form_cliente_action_window">
       <field name="name">Formulario Cliente</field>
       <field name="res_model">keralty_module.formulario.cliente</field>
       <field name="view_mode">tree,pivot,graph,form,kanban</field>
@@ -189,10 +189,15 @@
     <!-- menu categories -->
     <menuitem name="Parametrización" id="keralty_module.menu_1" parent="keralty_module.menu_root"/>
     <menuitem name="Formulario Clientes" id="keralty_module.menu_2" parent="keralty_module.menu_root"/>
+    <menuitem name="Formulario ClientesEX" id="keralty_module.menu_3" parent="keralty_module.menu_root"/>
     <!-- actions -->
     <menuitem name="Lista de Parametrizaciones" id="keralty_module.menu_1_list" parent="keralty_module.menu_1"
               action="keralty_module.action_window"/>
-    <menuitem name="Lista de Formularios Clientes" id="keralty_module" parent="keralty_module.menu_2"
-              action="keralty_module_form_cliente.action_window"/>
+    <menuitem name="Lista de Formularios Clientes" id="keralty_module.menu_1_clientes" parent="keralty_module.menu_1"
+              action="keralty_module.form_cliente_action_window"/>
+    <menuitem name="Lista de Formularios Clientes" id="keralty_module.menu_2_list" parent="keralty_module.menu_2"
+              action="keralty_module.form_cliente_action_window"/>
+    <menuitem name="Lista de Formularios ClientesEX" id="keralty_module.menu_3_list" parent="keralty_module.menu_3"
+              action="keralty_module.action_server"/>
   </data>
 </odoo>
