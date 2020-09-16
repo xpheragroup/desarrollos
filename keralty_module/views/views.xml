@@ -11,6 +11,17 @@
         </tree>
       </field>
     </record>
+      <!-- Vista de lista para FORMULARIO CLIENTE -->
+    <record model="ir.ui.view" id="keralty_module.form_cliente_list">
+      <field name="name">Formulario Params list</field>
+      <field name="model">keralty_module.formulario.cliente</field>
+      <field name="arch" type="xml">
+        <tree string="Información general">
+          <field name="nombre_proyecto" placeholder="Nombre Proyecto"/>
+          <field name="consultorio_general" placeholder="Consultorio General"/>
+        </tree>
+      </field>
+    </record>
 
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="keralty_module.action_window">
@@ -31,7 +42,7 @@
       <field name="view_mode">tree,pivot,graph,form,kanban</field>
       <field name="help" type="html">
           <p class="oe_view_nocontent_create">
-              No hay ningún formulario o proyecto de cliente creado hasta el momento.
+              No hay ningún formulario o proyecto de cliente creado aún.
           </p>
       </field>
     </record>
@@ -130,12 +141,6 @@
                 <button name="print_quotation" string="Paso 1" type="object" class="oe_highlight" groups="base.group_user"/>
             </header>
             <sheet>
-                <div class="oe_button_box" name="button_box">
-                    <button type="object"  name="action_view_invoice"
-                        class="oe_stat_button"
-                        icon="fa-pencil-square-o">
-                    </button>
-                </div>
                 <div class="oe_title">
                     <img src="/keralty_module/static/src/img/keralty_logo.svg" width="150px" height="100px"/>
                     <!-- <span class="o_form_label">Título Formulario Parametrización </span> -->
@@ -145,39 +150,32 @@
                 </div>
                 <group>
                     <group string="Ocupación Centro Médico">
-                        <h2><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios"/></h2>
-                        <h2><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados"/></h2>
-                        <h2><field name="terceros" class="oe_inline" placeholder="Terceros"/></h2>
+                        <h2><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios" widget="char"/></h2>
+                        <h2><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados" widget="char" icon="fa-file-text-o"/></h2>
+                        <h2><field name="terceros" class="oe_inline" placeholder="Terceros" widget="char" icon="Hold" /></h2>
                     </group>
                 </group>
 
                 <notebook>
-                    <page string="ÁREAS ASISTENCIALES">
-                        <field name="consultorio_general"/>
-                        <field name="consultorio_general_con_banio"/>
-                        <field name="consultorio_general_con_banio_disc"/>
-                    </page>
-                    <page string="ÁREAS DE ATENCIÓN AL AFILIADO">
-                    </page>
-                    <page string="ÁREAS ADMINISTRATIVAS">
-                    </page>
-                    <page string="LABORATORIOS">
-                    </page>
-                    <page string="Secundario Test" name="purchase_delivery_invoice">
+                    <page class="oe_highlight" string="ÁREAS ASISTENCIALES">
                         <group>
-                            <group name="planning">
-                                <span class="o_form_label">Info</span>
-                            </group>
-                            <group name="other_info">
-                                <span class="o_form_label">Otra info</span>
+                            <group string="Áreas Asistenciales">
+                                <field name="consultorio_general"/>
+                                <field name="consultorio_general_con_banio"/>
+                                <field name="consultorio_general_con_banio_disc"/>
+                                <field name="consultorio_general_crecimiento_desarrollo"/>
+                                <field name="consultorio_vacunacion"/>
                             </group>
                         </group>
                     </page>
+                    <page style="background: green;" string="ÁREAS DE ATENCIÓN AL AFILIADO">
+                    </page>
+                    <page class="oe_highlight" string="ÁREAS ADMINISTRATIVAS">
+                    </page>
+                    <page string="LABORATORIOS">
+                    </page>
                 </notebook>
             </sheet>
-            <div class="oe_chatter">
-                <span class="o_form_label">oe_chatter</span>
-            </div>
             </form>
         </field>
     </record>
