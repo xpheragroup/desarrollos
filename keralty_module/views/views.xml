@@ -24,6 +24,18 @@
       </field>
     </record>
 
+    <!-- FORMULARIO CLIENTE -->
+    <record model="ir.actions.act_window" id="keralty_module.form_cliente.action_window">
+      <field name="name">Formulario Cliente</field>
+      <field name="res_model">keralty_module.formulario.cliente</field>
+      <field name="view_mode">tree,pivot,graph,form,kanban</field>
+      <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+              No hay ningún formulario o proyecto de cliente creado hasta el momento.
+          </p>
+      </field>
+    </record>
+
     <!-- server action to the one above -->
     <record model="ir.actions.server" id="keralty_module.action_server">
       <field name="name">keralty_module server</field>
@@ -181,6 +193,6 @@
     <menuitem name="Lista de Parametrizaciones" id="keralty_module.menu_1_list" parent="keralty_module.menu_1"
               action="keralty_module.action_window"/>
     <menuitem name="Lista de Formularios Clientes" id="keralty_module" parent="keralty_module.menu_2"
-              action="keralty_module.action_server"/>
+              action="keralty_module.form_cliente.action_window"/>
   </data>
 </odoo>
