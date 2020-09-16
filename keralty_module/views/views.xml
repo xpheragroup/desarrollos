@@ -38,6 +38,8 @@
       </field>
     </record>
 
+    <!-- VISTAS DE FORMULARIO -->
+
     <!-- FORMULARIO PARAMETRIZACIONES PERSONALIZADO -->
     <record id="keralty_formulario_param_form" model="ir.ui.view">
         <field name="name">keralty_module.formulario.param.form</field>
@@ -60,7 +62,8 @@
                     <h1><field name="nombre_codigo" class="oe_inline" placeholder="Nombre o Código"/></h1>
                 </div>
                 <group>
-                    <group string="Consultorios">
+                    <group string="Cantidad de Consultorios para cada área">
+                        <span class="o_form_label">Ingrese la cantidad de Consultorios para la creación de cada área derivada a continuación:</span>
                         <field name="casilleros"/>
                         <field name="banios_hombres"/>
                         <field name="banios_mujeres"/>
@@ -71,7 +74,8 @@
                         <field name="banios_hombres_emp"/>
                         <field name="banios_mujeres_emp"/>
                     </group>
-                    <group string="Laboratorios">
+                    <group string="Cantidad de Laboratorios para cada área">
+                        <span class="o_form_label">Ingrese la cantidad de Laboratorios para la creación de cada área derivada a continuación:</span>
                         <field name="banios_hombres_lab"/>
                         <field name="banios_mujeres_lab"/>
                         <field name="banios_hombres_lab_disc"/>
@@ -83,6 +87,69 @@
                 </group>
                 <notebook>
                     <page string="Inicial">
+                    </page>
+                    <page string="Secundario Test" name="purchase_delivery_invoice">
+                        <group>
+                            <group name="planning">
+                                <span class="o_form_label">Info</span>
+                            </group>
+                            <group name="other_info">
+                                <span class="o_form_label">Otra info</span>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </sheet>
+            <div class="oe_chatter">
+                <span class="o_form_label">oe_chatter</span>
+            </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- FORMULARIO CLIENTES -->
+    <record id="keralty_formulario_cliente_form" model="ir.ui.view">
+        <field name="name">keralty_module.formulario.cliente.form</field>
+        <field name="model">keralty_module.formulario.cliente</field>
+        <field name="arch" type="xml">
+            <form string="Formulario Cliente" class="o_purchase_order">
+            <header>
+                <button name="print_quotation" string="Paso 1" type="object" class="oe_highlight" groups="base.group_user"/>
+            </header>
+            <sheet>
+                <div class="oe_button_box" name="button_box">
+                    <button type="object"  name="action_view_invoice"
+                        class="oe_stat_button"
+                        icon="fa-pencil-square-o">
+                    </button>
+                </div>
+                <div class="oe_title">
+                    <img src="/keralty_module/static/src/img/keralty_logo.svg" width="150px" height="100px"/>
+                    <!-- <span class="o_form_label">Título Formulario Parametrización </span> -->
+                    <h1><field name="nombre_proyecto" class="oe_inline" placeholder="Nombre Proyecto"/></h1>
+
+                    <span class="o_form_label">Ingrese la cantidad de espacios a solicitar por cada una de las áreas que se presentan a continuación:</span>
+                </div>
+                <group>
+                    <group string="Ocupación Centro Médico">
+                        <h2><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios"/></h2>
+                        <h2><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados"/></h2>
+                        <h2><field name="terceros" class="oe_inline" placeholder="Terceros"/></h2>
+                    </group>
+                </group>
+
+                <notebook>
+                    <page string="ÁREAS ASISTENCIALES">
+                        <field name="consultorio_general"/>
+                        <field name="consultorio_general_con_banio"/>
+                        <field name="consultorio_general_con_banio_disc"/>
+                    </page>
+                    <page string="ÁREAS DE ATENCIÓN AL AFILIADO">
+                    </page>
+                    <page string="ÁREAS ADMINISTRATIVAS">
+                    </page>
+                    <page string="LABORATORIOS">
                     </page>
                     <page string="Secundario Test" name="purchase_delivery_invoice">
                         <group>
