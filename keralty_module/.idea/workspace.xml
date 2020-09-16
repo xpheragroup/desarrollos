@@ -34,13 +34,25 @@
       <option name="presentableId" value="Default" />
       <updated>1599064217504</updated>
     </task>
+    <task id="LOCAL-00001" summary="Permisos a modelo en archivo de acceso">
+      <created>1600269922722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600269922722</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Permisos a modelo en archivo de acceso" />
+    <option name="LAST_COMMIT_MESSAGE" value="Permisos a modelo en archivo de acceso" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="101" width="912" height="911" key="CommitChangelistDialog2" timestamp="1600269608832">
+    <state x="671" y="123" width="912" height="911" key="CommitChangelistDialog2" timestamp="1600269922500">
       <screen x="68" y="27" width="1852" height="1053" />
     </state>
-    <state x="533" y="101" width="912" height="911" key="CommitChangelistDialog2/68.27.1852.1053@68.27.1852.1053" timestamp="1600269608832" />
+    <state x="671" y="123" width="912" height="911" key="CommitChangelistDialog2/68.27.1852.1053@68.27.1852.1053" timestamp="1600269922500" />
     <state x="646" y="354" width="620" height="522" key="find.popup" timestamp="1599086946316">
       <screen x="68" y="27" width="1852" height="1053" />
     </state>
