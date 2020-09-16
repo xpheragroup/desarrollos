@@ -149,17 +149,17 @@
                     <span class="o_form_label">Ingrese la cantidad de espacios a solicitar por cada una de las áreas que se presentan a continuación:</span>
                 </div>
                 <group string="Ocupación Centro Médico">
-                    <h2><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios" widget="char"/><i class="fa fa fa-search"/></h2>
-                    <h2><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados" widget="char" /><i class="fa fa fa-search"/></h2>
-                    <h2><field name="terceros" class="oe_inline" placeholder="Terceros" widget="char"/><i class="fa fa fa-search"/></h2>
+                    <h2 class="oe_edit_only"><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios" widget="char" icon="fa fa-male"/><span class="fa fa-male"/></h2>
+                    <h2 class="oe_edit_only"><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados" widget="char" icon="fa-male"/><span class="fa fa-male"/></h2>
+                    <h2 class="oe_edit_only"><field name="terceros" class="oe_inline" placeholder="Terceros" widget="char"/><span class="fa fa-male"/></h2>
                 </group>
 
                 <notebook>
                     <page class="oe_highlight" string="ÁREAS ASISTENCIALES">
                         <group class="invoice-residual-view">
                             <group string="Áreas Asistenciales">
-                                <field name="consultorio_general"/>
-                                <field name="consultorio_general_con_banio"/>
+                                <field name="consultorio_general" icon="fa-user-friends"/>
+                                <field name="consultorio_general_con_banio" icon="fa-male"/>
                                 <field name="consultorio_general_con_banio_disc"/>
                                 <field name="consultorio_general_crecimiento_desarrollo"/>
                                 <field name="consultorio_vacunacion"/>
