@@ -43,7 +43,6 @@ class FormularioCliente(models.Model):
     consultorio_general_con_banio_disc = fields.Float(string="Consultorio General con baño en condición de discapacidad", required=True, help="Consultorio General con baño en condición de discapacidad", digits=(8, 2))
     consultorio_general_crecimiento_desarrollo = fields.Float(string="Consultorio General crecimiento y desarrollo", required=True, help="Consultorio General crecimiento y desarrollo", digits=(8, 2))
     consultorio_vacunacion = fields.Float(string="Consultorio Vacunación", required=True, help="Consultorio Vacunación", digits=(8, 2))
-    areas_categoria = fields.Many
 
 class FormularioValidacion(models.Model):
     _name = 'keralty_module/.formulario.validacion'
