@@ -22,28 +22,6 @@
         </tree>
       </field>
     </record>
-      <!-- Vista de lista para FORMULARIO VALIDACIÓN -->
-    <record model="ir.ui.view" id="keralty_module.form_cliente_list">
-      <field name="name">Formulario Params list</field>
-      <field name="model">keralty_module.formulario.cliente</field>
-      <field name="arch" type="xml">
-        <tree string="Información general">
-          <field name="nombre_proyecto" placeholder="Nombre Proyecto"/>
-          <field name="consultorio_general" placeholder="Consultorio General"/>
-        </tree>
-      </field>
-    </record>
-      <!-- Vista de lista para FORMULARIO CLIENTE -->
-    <record model="ir.ui.view" id="keralty_module.form_cliente_list">
-      <field name="name">Formulario Params list</field>
-      <field name="model">keralty_module.formulario.cliente</field>
-      <field name="arch" type="xml">
-        <tree string="Información general">
-          <field name="nombre_proyecto" placeholder="Nombre Proyecto"/>
-          <field name="consultorio_general" placeholder="Consultorio General"/>
-        </tree>
-      </field>
-    </record>
 
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="keralty_module.action_window">
@@ -70,7 +48,7 @@
     </record>
 
     <!-- FORMULARIO VALIDACIÓN -->
-    <record model="ir.actions.act_window" id="keralty_module.form_cliente_action_window">
+    <record model="ir.actions.act_window" id="keralty_module.form_validacion_action_window">
       <field name="name">Formulario Validación</field>
       <field name="res_model">keralty_module.formulario.validacion</field>
       <field name="view_mode">tree,pivot,graph,form,kanban</field>
@@ -99,7 +77,7 @@
 
     <!-- FORMULARIO PARAMETRIZACIONES PERSONALIZADO -->
     <record id="keralty_formulario_param_form" model="ir.ui.view">
-        <field name="name">keralty_module.formulario.param.form</field>
+        <field name="name">Formulario Parametrización</field>
         <field name="model">keralty_module.formulario.param</field>
         <field name="arch" type="xml">
             <form string="Formulario de Parametricos" class="o_purchase_order">
@@ -167,7 +145,7 @@
 
     <!-- FORMULARIO CLIENTES -->
     <record id="keralty_formulario_cliente_form" model="ir.ui.view">
-        <field name="name">keralty_module.formulario.cliente.form</field>
+        <field name="name">Formulario Clientes</field>
         <field name="model">keralty_module.formulario.cliente</field>
         <field name="arch" type="xml">
             <form string="Formulario Cliente" class="o_purchase_order">
@@ -219,10 +197,13 @@
     <!-- menu categories -->
     <menuitem name="Parametrización" id="keralty_module.menu_1" parent="keralty_module.menu_root"/>
     <menuitem name="Formulario Clientes" id="keralty_module.menu_2" parent="keralty_module.menu_root"/>
+    <menuitem name="Formulario Validación" id="keralty_module.menu_3" parent="keralty_module.menu_root"/>
     <!-- actions -->
     <menuitem name="Lista de Parametrizaciones" id="keralty_module.menu_1_list" parent="keralty_module.menu_1"
               action="keralty_module.action_window"/>
     <menuitem name="Lista de Formularios Clientes" id="keralty_module.menu_2_list" parent="keralty_module.menu_2"
               action="keralty_module.form_cliente_action_window"/>
+      <menuitem name="Lista de Formularios de Validación" id="keralty_module.menu_3_list" parent="keralty_module.menu_3"
+              action="keralty_module.form_validacion_action_window"/>
   </data>
 </odoo>
