@@ -22,6 +22,28 @@
         </tree>
       </field>
     </record>
+      <!-- Vista de lista para FORMULARIO VALIDACIÓN -->
+    <record model="ir.ui.view" id="keralty_module.form_cliente_list">
+      <field name="name">Formulario Params list</field>
+      <field name="model">keralty_module.formulario.cliente</field>
+      <field name="arch" type="xml">
+        <tree string="Información general">
+          <field name="nombre_proyecto" placeholder="Nombre Proyecto"/>
+          <field name="consultorio_general" placeholder="Consultorio General"/>
+        </tree>
+      </field>
+    </record>
+      <!-- Vista de lista para FORMULARIO CLIENTE -->
+    <record model="ir.ui.view" id="keralty_module.form_cliente_list">
+      <field name="name">Formulario Params list</field>
+      <field name="model">keralty_module.formulario.cliente</field>
+      <field name="arch" type="xml">
+        <tree string="Información general">
+          <field name="nombre_proyecto" placeholder="Nombre Proyecto"/>
+          <field name="consultorio_general" placeholder="Consultorio General"/>
+        </tree>
+      </field>
+    </record>
 
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="keralty_module.action_window">
@@ -43,6 +65,18 @@
       <field name="help" type="html">
           <p class="oe_view_nocontent_create">
               No hay ningún formulario o proyecto de cliente creado aún.
+          </p>
+      </field>
+    </record>
+
+    <!-- FORMULARIO VALIDACIÓN -->
+    <record model="ir.actions.act_window" id="keralty_module.form_cliente_action_window">
+      <field name="name">Formulario Validación</field>
+      <field name="res_model">keralty_module.formulario.validacion</field>
+      <field name="view_mode">tree,pivot,graph,form,kanban</field>
+      <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+              No hay ningún formulario DE VALIDACIÓN creado aún.
           </p>
       </field>
     </record>
@@ -151,7 +185,7 @@
                 <group string="Ocupación Centro Médico">
                     <h2><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios" widget="char" /><span class="fa fa-male oe_edit_only"/></h2>
                     <h2><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados" widget="char" /><span class="fa fa-male oe_edit_only"/></h2>
-                    <h2<field name="terceros" class="oe_inline" placeholder="Terceros" widget="char"/><span class="fa fa-male oe_edit_only"/></h2>
+                    <h2><field name="terceros" class="oe_inline" placeholder="Terceros" widget="char"/><span class="fa fa-male oe_edit_only"/></h2>
                 </group>
 
                 <notebook>

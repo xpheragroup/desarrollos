@@ -45,13 +45,13 @@ class FormularioCliente(models.Model):
     consultorio_vacunacion = fields.Float(string="Consultorio Vacunación", required=True, help="Consultorio Vacunación", digits=(8, 2))
 
 class FormularioValidacion(models.Model):
-    _name = 'keralty_module/.formulario.validacion'
-    _descripción = 'Formulario Validación'
+    _name = 'keralty_module.formulario.validacion'
+    _description = 'Formulario Validacion'
 
     nombre_tecnico = fields.Char(required=True, string="Nombre Proyecto")
     descripcion = fields.Char(required=True, string="Descripcion")
     formulario_cliente = fields.Many2one(string="Formulario Cliente", comodel_name='keralty_module.formulario.cliente',
-                    help="Formulario Cliente asociado para validación técnica.")
+                    help="Formulario Cliente asociado para validacion tecnica.")
 
 
 # class keralty_module(models.Model):

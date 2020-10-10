@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed077b0a-556e-4c47-980c-cb31f742ac23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +77,9 @@
       <screen x="68" y="27" width="1852" height="1053" />
     </state>
     <state x="671" y="123" width="912" height="911" key="CommitChangelistDialog2/68.27.1852.1053@68.27.1852.1053" timestamp="1600287506906" />
-    <state x="646" y="354" width="620" height="522" key="find.popup" timestamp="1599086946316">
+    <state x="646" y="354" width="620" height="522" key="find.popup" timestamp="1602343133222">
       <screen x="68" y="27" width="1852" height="1053" />
     </state>
-    <state x="646" y="354" width="620" height="522" key="find.popup/68.27.1852.1053@68.27.1852.1053" timestamp="1599086946316" />
+    <state x="646" y="354" width="620" height="522" key="find.popup/68.27.1852.1053@68.27.1852.1053" timestamp="1602343133222" />
   </component>
 </project>
