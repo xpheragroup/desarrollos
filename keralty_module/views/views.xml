@@ -149,9 +149,9 @@
                     <span class="o_form_label">Ingrese la cantidad de espacios a solicitar por cada una de las áreas que se presentan a continuación:</span>
                 </div>
                 <group string="Ocupación Centro Médico">
-                    <h2 class="oe_edit_only"><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios" widget="char" icon="fa fa-male"/><span class="fa fa-male"/></h2>
-                    <h2 class="oe_edit_only"><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados" widget="char" icon="fa-male"/><span class="fa fa-male"/></h2>
-                    <h2 class="oe_edit_only"><field name="terceros" class="oe_inline" placeholder="Terceros" widget="char"/><span class="fa fa-male"/></h2>
+                    <h2><field name="numero_usuarios" class="oe_inline" placeholder="Número de Usuarios" widget="char" /><span class="fa fa-male oe_edit_only"/></h2>
+                    <h2><field name="numero_empleados" class="oe_inline" placeholder="Número de Empleados" widget="char" /><span class="fa fa-male oe_edit_only"/></h2>
+                    <h2<field name="terceros" class="oe_inline" placeholder="Terceros" widget="char"/><span class="fa fa-male oe_edit_only"/></h2>
                 </group>
 
                 <notebook>
