@@ -53,6 +53,20 @@ class FormularioValidacion(models.Model):
     formulario_cliente = fields.Many2one(string="Formulario Cliente", comodel_name='keralty_module.formulario.cliente',
                     help="Formulario Cliente asociado para validacion tecnica.")
 
+# hereda de producto y añade campo para relación con Categoría
+class ProductProduct(models.Model):
+    _inherit = 'product.product'
+    categoria_ids = fields.Many2one(string="Categorías", comodel_name='keralty_module.categoria',
+                                    help='Categorías asociadas al producto.')
+
+class Categoria(models.Model):
+    _name = 'keralty_module.categoria'
+    _description = 'Categoria'
+
+    formulario_cliente = fields.Many2one(string="Formulario Cliente", comodel_name='keralty_module.formulario.cliente',
+                    help="Formulario Cliente asociado para validacion tecnica.")
+    productos_asociados = fields.One2many('product.TEMPLATE', 'categoria_ids', 'Productos Asociados')
+
 
 # class keralty_module(models.Model):
 #     _name = 'keralty_module.keralty_module'
